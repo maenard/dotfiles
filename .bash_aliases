@@ -7,10 +7,6 @@ pas() {
   php artisan serve
 }
 
-infosoft-staging() {
-  ssh root@159.223.86.244
-}
-
 front-up() {
   # Update /etc/hosts file
   ~/./update_host.sh
