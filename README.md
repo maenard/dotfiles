@@ -18,6 +18,13 @@ apt-get install git
 apt-get install stow
 ```
 
+### feh
+```
+apt-get install feh
+```
+
+You can use any package manager you prefer.
+
 ## Installation
 
 Make sure that you clone this repo in your $HOME directory.
