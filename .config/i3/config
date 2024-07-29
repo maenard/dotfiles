@@ -11,7 +11,7 @@
 
 set $mod Mod4
 exec_always --no-startup-id killall polybar
-exec_always --no-startup-id polybar mybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id feh --bg-scale ~/backgrounds/z.png
 
