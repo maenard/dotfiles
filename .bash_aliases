@@ -7,9 +7,13 @@ pas() {
   php artisan serve
 }
 
+scripts() {
+  ~/scripts/pick.sh
+}
+
 front-up() {
   # Update /etc/hosts file
-  ~/./update_host.sh
+  ~/./scripts/update_host.sh
 
   # Function to find an unused port
   find_unused_port() {
