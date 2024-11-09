@@ -30,8 +30,5 @@ fi
 # Get the original container name based on the chosen index
 CONTAINER_NAME="${containers[$index]}"
 
-# Remove the "laradock-" prefix and final "-{index}" to get the service name
-SERVICE_NAME=$(echo "$CONTAINER_NAME" | sed -E 's/^laradock-//; s/-[0-9]+$//')
-
-# Enter the chosen container
-docker compose exec $SERVICE_NAME bash
+# Enter the chosen container using docker exec
+docker exec -it $CONTAINER_NAME bash

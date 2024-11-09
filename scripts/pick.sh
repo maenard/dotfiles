@@ -2,7 +2,12 @@
 
 # List all script files (.sh) in the current directory and subdirectories
 echo "Available scripts:"
-mapfile -t script_files < <(find ~/scripts/ -type f -name "*.sh")
+# mapfile -t script_files < <(find ~/scripts/ -type f -name "*.sh")
+
+script_files=()
+while IFS= read -r file; do
+  script_files+=("$file")
+done < <(find ~/scripts/ -type f -name "*.sh")
 
 # Check if there are any script files
 if [ ${#script_files[@]} -eq 0 ]; then
