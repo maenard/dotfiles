@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -115,3 +115,13 @@ export PATH=/Volumes/maen-T7/Development/flutter/bin:$PATH
 
 # gem
 # export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# android sdk
+export ANDROID_HOME=/Volumes/maen-T7/Development/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+
+# flutterfire
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# composer bin
+export PATH=$HOME/.composer/vendor/bin:$PATH

@@ -5,3 +5,7 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.list = false
 vim.g.indent_blankline_enabled = false
+
+-- moonfly --
+vim.g.moonflyTransparent = true
+vim.g.moonflyWinSeparator = 2
