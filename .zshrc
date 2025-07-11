@@ -125,3 +125,7 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # composer bin
 export PATH=$HOME/.composer/vendor/bin:$PATH
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
