@@ -103,29 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# sail alias
-alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
-
-# flutter
-export PATH=/Volumes/maen-T7/Development/flutter/bin:$PATH
-
-# gem
-# export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-# android sdk
-export ANDROID_HOME=/Volumes/maen-T7/Development/sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
-
-# flutterfire
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-
-# composer bin
-export PATH=$HOME/.composer/vendor/bin:$PATH
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
